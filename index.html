@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahadev – King of the Gambling World. Learn how to play and win big. Contact us on WhatsApp for more information." />
+  <meta name="keywords" content="Mahadev, Gambling, How to Play, WhatsApp, Casino, Betting" />
+  <meta name="author" content="Mahadev Team" />
+  <meta name="google-site-verification" content="your-google-site-verification-code" />
+  <title>Mahadev – King of the Gambling World</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Mahadev</h1>
+    <p>King of the Gambling World</p>
+    <select id="langSwitcher" onchange="translateLang(this.value)">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+    </select>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#how-to-play">How to Play</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="welcome">
+    <h2 data-en="Welcome to Mahadev" data-hi="महादेव में आपका स्वागत है">Welcome to Mahadev</h2>
+    <p data-en="Experience the thrill of gambling with Mahadev, the ultimate destination for gaming enthusiasts." 
+       data-hi="महादेव के साथ जुए का रोमांच अनुभव करें, गेमिंग प्रेमियों का अंतिम गंतव्य।">Experience the thrill of gambling...</p>
+  </section>
+
+  <section id="how-to-play">
+    <h2 data-en="How to Play" data-hi="कैसे खेलें">How to Play</h2>
+    <p data-en="Learn the rules and strategies to win." data-hi="जीतने के लिए नियम और रणनीतियाँ सीखें।">Learn the rules...</p>
+  </section>
+
+  <section id="contact">
+    <h2 data-en="Contact Us" data-hi="संपर्क करें">Contact Us</h2>
+    <p data-en="Ready to start? Chat on WhatsApp!" data-hi="शुरू करने के लिए तैयार? WhatsApp पर चैट करें!">Ready to start?</p>
+    <a href="https://wa.me/1234567890" class="whatsapp-button">Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mahadev. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function translateLang(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
+</body>
+</html>
